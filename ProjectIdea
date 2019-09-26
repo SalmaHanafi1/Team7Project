@@ -1,17 +1,17 @@
 Places to ride Bicycles (Name not chosen yet!!)
 
-Import maps
-Inputs your location.
-Level of difficulty.
-Locate the nearest parks, roads with bike lanes.
-Excludes the highways
-Places where it is restricted to ride bikes
-Feedback from people about the place (if it is a park).
-Shows if there are any construction near the suggested places.
-Takes your input about how crowded/uncrowded you want the place to be (maybe?)
-Shows the traffic congestion during the day on the roads with bike lanes
-Maybe connects you with bikers who go on a ride on the places suggested?
-Update you if there are any bike rides/races/events being held soon around your location.
+- Import maps
+- Inputs your location.
+- Level of difficulty.
+- Locate the nearest parks, roads with bike lanes.
+- Excludes the highways
+- Places where it is restricted to ride bikes
+- Feedback from people about the place (if it is a park).
+- Shows if there are any construction near the suggested places.
+- Takes your input about how crowded/uncrowded you want the place to be (maybe?)
+- Shows the traffic congestion during the day on the roads with bike lanes
+- Maybe connects you with bikers who go on a ride on the places suggested?
+- Update you if there are any bike rides/races/events being held soon around your location.
 
 
 Framework: https://gomockingbird.com/projects/q8peuk7/4gXVnC
