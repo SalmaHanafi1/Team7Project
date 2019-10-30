@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 h1 {
+  text-align:center;
   font-size: 45px;
   font-style: oblique;
   color: #00ffbf;
@@ -10,8 +11,13 @@ h1 {
 }
 
 p {
+  text-align:center;
   font-size: 25px;
   font-style: oblique;
   color: #0000ff;
   
+}
+
+.centerimg{
+  transform: translate(25%, 5%);
 }
