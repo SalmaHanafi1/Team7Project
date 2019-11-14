@@ -1,0 +1,19 @@
+<h1>Listing feedback</h1>
+<%= link_to 'New Feedback', new_feedback_path %>
+<table>
+  <tr>
+    <th>title</th>
+  </tr>
+ 
+  <% @comments.each do |comment| %>
+    <tr>
+      <td><%= comment.security %></td>
+      <td><%= comment.difficulty %></td>
+      <td><%= link_to 'Show', comment_path(comment) %></td>
+      <td><%= link_to 'Destroy',
+       comment_path(comment),
+      method: :delete,
+      data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
