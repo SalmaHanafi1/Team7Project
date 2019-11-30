@@ -2,26 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
-  text-align:center;
-  font-size: 45px;
-  font-style: oblique;
-  color: #0000ff;
-  
+.home_video {
+ width: 100vw;
+ height: 100vh;
+ position: absolute;
+ object-fit: cover;
+ top: 0;
+ z-index: -2;
+}
+.home-video-wrapper {
+height: 100vh;
+display: flex;
 }
 
-h2 {
-  text-align:center;
-  font-size: 25px;
-  font-style: oblique;
-  color: #0000ff;
-  
-}
 
-p{
-  text-align:center;
-}
-
-.centerimg{
-  transform: translate(25%, 5%);
+p.home {
+  color: 0040ff;
+  font-size: 40px;
+  text-align:center; 
+  vertical-align: middle;
+  display: table-cell;  
 }
