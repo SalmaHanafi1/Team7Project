@@ -1,15 +1,9 @@
-<h1>Biking trail in charlotte</h1>
- 
-<table>
-  <tr>
-    <th>Trail</th>
-  </tr>
- 
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-    </tr>
-  <% end %>
-</table>
+<h1>Biking Trails in Charlotte</h1>
+
+<% @trail.each do |trail| %>
+<p>
+  <%= trail.Name %>
+  <%= trail.Location %>
+  <%= link_to 'Show', trail_path(trail) %>
+</p>
+<% end %>
