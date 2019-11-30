@@ -9,9 +9,11 @@
 </p>
 
 <% (0...@trail.images.count).each do |image| %>
-<%= image_tag(@trail.images[image]) %>
+<%= image_tag(@trail.thumbnail(image)) %>
 <% end %>
+
 <p>
     <strong>Description:</strong>
     <%= @trail.Description %>
 </p>
+<%= link_to 'Back', trails_path %>
