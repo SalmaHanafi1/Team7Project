@@ -1,7 +1,7 @@
 class Trail < ApplicationRecord
     has_many_attached :images
     validates :Name, presence: true, length: { minimum: 5}
-    validates :Location, presence: true
+    validates :Location, presence: true, length: { minimum: 20}
     validate :image_type
     
     
