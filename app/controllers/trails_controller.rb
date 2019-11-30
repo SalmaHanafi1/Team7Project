@@ -19,6 +19,19 @@ class TrailsController < ApplicationController
         render 'new'
         end
     end
+    def edit
+        @trail = Trail.find(params[:id])
+    end
+    
+    def update
+        @trail = Trail.find(params[:id])
+        
+        if @trail.update(trail_params)
+        redirect_to @trail
+        else
+        render 'edit'
+        end
+    end
 end
 
 private
