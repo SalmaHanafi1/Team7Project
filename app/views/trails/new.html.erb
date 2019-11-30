@@ -5,11 +5,17 @@
     <%= f.label :Name %><br>
     <%= f.text_field :Name %>
   </p>
+  
     <p>
     <%= f.label :Location %><br>
     <%= f.text_field :Location %>
   </p>
  
+  <p>
+    <%= f.label :images %><br>
+    <%= f.file_field :images, multiple: true %>
+  </p>
+  
   <p>
     <%= f.label :Description %><br>
     <%= f.text_area :Description %>

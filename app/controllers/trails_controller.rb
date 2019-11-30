@@ -19,5 +19,5 @@ end
 
 private
     def trail_params
-        params.require(:trail).permit(:Name, :Location, :Description)
+        params.require(:trail).permit(:Name, :Location, :Description, images: [])
     end

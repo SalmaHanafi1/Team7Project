@@ -8,6 +8,9 @@
     <%= @trail.Location %>
 </p>
 
+<% (0...@trail.images.count).each do |image| %>
+<%= image_tag(@trail.images[image]) %>
+<% end %>
 <p>
     <strong>Description:</strong>
     <%= @trail.Description %>
