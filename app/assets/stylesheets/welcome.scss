@@ -13,13 +13,25 @@
 .home-video-wrapper {
 height: 100vh;
 display: flex;
+justify-content: center;
+color: white;
+}
+p.home {
+  color: black;
+  font-size: 20px;
+  text-align:center; 
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  background : honeydew ;
+  border: double;
+  width: 80vw;
+  
 }
 
-
-p.home {
-  color: 0040ff;
+h1.home {
+  color: 4000ff;
   font-size: 40px;
   text-align:center; 
   vertical-align: middle;
-  display: table-cell;  
 }
