@@ -1,4 +1,33 @@
+
+
 <h1>You will find maps here!</h1>
+
+
+  <body>
+    <h3>Your Trail is here: </h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+  function initMap() {
+  // The location of Uluru
+  var place = {lat: 40.72, lng: -73.96};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: place});
+  // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: place, map: map});
+  }
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE3g5ghXmEuUdAf84v66OF8mNafIer6hU&callback=initMap">
+    </script>
+  </body>
 
 
 
