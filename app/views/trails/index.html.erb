@@ -7,7 +7,7 @@
   <%= trail.Location %>
   <%= link_to 'Show', trail_path(trail) %>&nbsp;
   <%= link_to 'Edit', edit_trail_path(trail) %>&nbsp;
-  <%= link_to 'Map' %>
+  <%= link_to 'Map', controller: 'maps' %> &nbsp;
   <%= link_to 'Delete',
        trail_path(trail),
       method: :delete,
