@@ -1,12 +1,17 @@
-<h1>Biking Trails in Charlotte</h1>
+<h1>Biking Trails in Charlotte, North Carolina</h1>
 <%= link_to 'Add a New Trail', new_trail_path %>
 
 <% @trail.each do |trail| %>
 <p>
   <%= trail.Name %>
   <%= trail.Location %>
-  <%= link_to 'Show', trail_path(trail) %>
-  <%= link_to 'Edit', edit_trail_path(trail) %>
+  <%= link_to 'Show', trail_path(trail) %>&nbsp;
+  <%= link_to 'Edit', edit_trail_path(trail) %>&nbsp;
+  <%= link_to 'Map' %>
+  <%= link_to 'Delete',
+       trail_path(trail),
+      method: :delete,
+      data: { confirm: 'Are you sure?' } %>
 </p>
 <% end %>
 
