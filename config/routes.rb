@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   get 'maps/index'
   get 'welcome/index'
+  get 'mainpage/index'
   
   resources :trails
   
