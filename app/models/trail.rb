@@ -16,7 +16,7 @@ class Trail < ApplicationRecord
             errors.add(:images, "are missing!")
         end
         images.each do |image|
-            if !image.content_type.in?(%('image/jpeg image/png'))
+            if !image.content_type.in?(%('image/jpeg image/png image/jpg'))
                errors.add(:images, 'needs to be a JPEG or PNG') 
             end
         end
