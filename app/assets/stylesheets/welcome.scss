@@ -24,17 +24,17 @@ color: white;
   font-size: 18px;
   cursor: pointer;
   text-align: center;
-  text-decoration: none;
-  outline: none;
   color: #fff;
-  background-color: #66ccff;
-  border: none;
+  background-color: #b3ffe0;
   border-radius: 15px;
   box-shadow: 0 9px #999;
-  margin:auto;
+  margin-right: 570px; 
   position: absolute;
-  justify-content: center
+  right:    0;
+  bottom:   0;
+  justify-content: center;
 }
+
 
 .button:hover {background-color: #3e8e41}
 

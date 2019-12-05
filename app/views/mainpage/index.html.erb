@@ -1,16 +1,12 @@
 <body>
 <ul>
-  <li><a class="active" href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a class="active" href="#about">About</a></li>
+  <li><a <%= link_to 'Find trails', controller: 'trails' %></a></li>
+  <li><a <%= link_to 'Feedback'%></a></li>
+  <li><a href="https://www.facebook.com/groups/532937140892453/">Follow our FB Page</a></li>
 </ul>
 
 <div class="hero-image">
-  <div class="hero-text">
-    <h3><%= link_to 'Find trails', controller: 'trails' %> &nbsp;&nbsp;&nbsp;
-    <h3><%= link_to 'Feedback'%>&nbsp;&nbsp;&nbsp;
-    Follow our FB Page: <a href="https://www.facebook.com/groups/532937140892453/">Safe Lane
-  </div>
 </div>
 
 </body>
