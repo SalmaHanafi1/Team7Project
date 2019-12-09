@@ -1,5 +1,6 @@
 class Trail < ApplicationRecord
     has_many_attached :images
+    has_many :feedbacks
     validates :Name, presence: true, length: { minimum: 5}
     validates :Location, presence: true, length: { minimum: 15}
     validates :Description, presence: true, length: { minimum: 20}
