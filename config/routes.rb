@@ -11,7 +11,6 @@ Rails.application.routes.draw do
   get 'welcome/index'
   get 'mainpage/index'
   
-<<<<<<< HEAD
   resources :trails
   resources :users, only: [:new, :create]
   
@@ -23,11 +22,7 @@ Rails.application.routes.draw do
   
   
  
-=======
-  resources :trails do
-    resources :feed_backs
-  end
->>>>>>> efc9b31e027fc4123f5a3bc0b62a4f95512da547
+  resources :trails
   
   root 'welcome#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
