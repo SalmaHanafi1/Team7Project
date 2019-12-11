@@ -1,11 +1,29 @@
 Rails.application.routes.draw do
   
+  get 'sessions/new'
+  get 'sessions/create'
+  get 'sessions/login'
+  get 'sessions/welcome'
+  get 'users/new'
+  get 'users/create'
+  get 'login/index'
   get 'maps/index'
   get 'welcome/index'
   get 'mainpage/index'
   
+  resources :trails
+  resources :users, only: [:new, :create]
+  
+  get 'login', to: 'sessions#new'
+  
+  post 'login' , to: 'sessions#create'
+  
+  get 'welcome', to: 'sessions#welcome'
+  
+  
+ 
   resources :trails do
-    resources :feed_backs
+    resources :reviews
   end
   
   root 'welcome#index'

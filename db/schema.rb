@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2019_12_09_230410) do
+=======
+ActiveRecord::Schema.define(version: 2019_12_10_021307) do
+>>>>>>> 0bf432bf09566fb45447090c3ddf8c9e0143b17b
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -42,6 +46,16 @@ ActiveRecord::Schema.define(version: 2019_12_09_230410) do
     t.index ["trail_id"], name: "index_feed_backs_on_trail_id"
   end
 
+  create_table "reviews", force: :cascade do |t|
+    t.integer "difficulty"
+    t.integer "security"
+    t.text "body"
+    t.integer "trail_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["trail_id"], name: "index_reviews_on_trail_id"
+  end
+
   create_table "trails", force: :cascade do |t|
     t.string "Name"
     t.string "Location"
@@ -50,6 +64,13 @@ ActiveRecord::Schema.define(version: 2019_12_09_230410) do
     t.datetime "updated_at", null: false
     t.float "latitude"
     t.float "longitude"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
