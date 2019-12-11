@@ -1,5 +1,4 @@
 
-
 <h1>You will find maps here!</h1>
 
 
@@ -11,8 +10,9 @@
 // Initialize and add the map
   function initMap() {
   // The location of Uluru
-  var place = {lat: 40.72, lng: -73.96};
-  // The map, centered at Uluru
+  x = 40.72;
+  y = -73.96;
+  var place = {lat: x, lng: y}; 
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 4, center: place});
   // The marker, positioned at Uluru
