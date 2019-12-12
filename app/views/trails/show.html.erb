@@ -1,19 +1,16 @@
-<!--
-The View component (trails/show.html.erb) is used for all the UI logic of the "show" tab under trails. It is basically all the componenets
-that the user or the customer sees when they navigate throught this tab of an already existing trail. In this page we have the information about the trail 
-such as Name, Location, Description. Also, we have the place for the user feedback as well as a link to the "Find Trails" page. 
 
--->
 
-<body>
 <ul>
   <li><a href="https://www.facebook.com/groups/532937140892453/" target="_blank">Follow our FB page</a></li>
   
   <li><a href="#about">About</a></li>
-  <li><a <%= link_to 'Back to trails list', trails_path %></a></li>
-  <li><a <%= link_to 'Home', mainpage_index_path %></a></li>
+  <li><a <%= link_to 'Feedback'%></a></li>
+  <li><a <%= link_to 'Back to trails list', controller: 'trails' %></a></li>
   <h1 class="home">Safe<img src="https://cdn.vectorstock.com/i/1000x1000/24/76/bike-wheel-on-white-backgrou-vector-13472476.jpg" height="40" width="40">Lane </h1>
 </ul>
+
+<body>
+
 
 <p>
     <strong>Name:</strong>
@@ -25,11 +22,9 @@ such as Name, Location, Description. Also, we have the place for the user feedba
     <%= @trail.Location %>
 </p>
 
-<h2>
 <% (0...@trail.images.count).each do |image| %>
 <%= image_tag(@trail.thumbnail(image)) %>
 <% end %>
-</h2>
 
 <p>
     <strong>Description:</strong>
@@ -37,7 +32,7 @@ such as Name, Location, Description. Also, we have the place for the user feedba
 </p>
 
 
-<h2>Review</h2>
+<h1>Review</h1>
 <% @trail.reviews.each do |review| %>
   <p>
     <strong>Difficulty:</strong>
@@ -55,7 +50,7 @@ such as Name, Location, Description. Also, we have the place for the user feedba
   </p>
 <% end %>
 
-<p>Add a review:</p>
+<h1>Add a review:</h1>
 <%= form_for([@trail, @trail.reviews.build]) do |f| %>
   <p>
     <%= f.label :difficulty %><br>
@@ -75,6 +70,5 @@ such as Name, Location, Description. Also, we have the place for the user feedba
   </p>
 <% end %>
 
-
-
+</body>
 

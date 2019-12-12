@@ -4,7 +4,7 @@ that the user or the customer sees when they navigate throught the "Add a new Tr
 a link to the "Find Trails" and a place for the user to add a new trail's information such as Name, Location, image and so on..
 -->
 
-<body>
+
 <ul>
   <li><a href="https://www.facebook.com/groups/532937140892453/" target="_blank">Follow our FB page</a></li>
   
@@ -14,22 +14,22 @@ a link to the "Find Trails" and a place for the user to add a new trail's inform
   <h1 class="home">Safe<img src="https://cdn.vectorstock.com/i/1000x1000/24/76/bike-wheel-on-white-backgrou-vector-13472476.jpg" height="40" width="40">Lane </h1>
 </ul>
 
-
+<body>
 
 <h1>Add a new Trail</h1>
 
 <%= form_for :trail, url: trails_path do |f| %>
   <% if @trail.errors.any? %>
   <div id="error_explanation">
-    <h2>
+    <h1>
       <%= pluralize(@trail.errors.count, "error") %> prohibited
       this trail from being saved:
-    </h2>
-    <ul>
+    </h1>
+    <h2>
       <% @trail.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
+      <h2><%= msg %></h2>
       <% end %>
-    </ul>
+    </h2>
   </div>
   <% end %>
   <p>
@@ -58,9 +58,4 @@ a link to the "Find Trails" and a place for the user to add a new trail's inform
 <% end %>
 
 
-<div class="footer"> 
- <li><a href="#contact">Contact Us</a></li>
- <li><a href="#privacy">Privacy Policy</a></li>
- <li><a href="#terms">Terms of Use</a></li>
- <h2>“Ride as much or as little, as long or as short as you feel. But ride” – Eddy Merckx</h2>
-</div>
+</body>

@@ -3,7 +3,7 @@ that the user or the customer sees when they navigate throught the "Find Trails"
 Link to Show, Edit, Map, Delete, link to the home page and more.
 -->
 
-<body>
+
 <ul>
   <li><a href="https://www.facebook.com/groups/532937140892453/" target="_blank">Follow our FB page</a></li>
   
@@ -12,13 +12,13 @@ Link to Show, Edit, Map, Delete, link to the home page and more.
   <li><a <%= link_to 'Home', mainpage_index_path %></a></li>
   <h1 class="home">Safe<img src="https://cdn.vectorstock.com/i/1000x1000/24/76/bike-wheel-on-white-backgrou-vector-13472476.jpg" height="40" width="40">Lane </h1>
 </ul>
+<body>
 
 
 
 
 
-
-<h1>Biking Trails in Charlotte, North Carolina</h1>
+<h4>Biking Trails in Charlotte, North Carolina</h4>
 
 
 <% @trail.each do |trail| %>
@@ -39,9 +39,4 @@ Link to Show, Edit, Map, Delete, link to the home page and more.
 
 
 
-<div class="footer"> 
- <li><a href="#contact">Contact Us</a></li>
- <li><a href="#privacy">Privacy Policy</a></li>
- <li><a href="#terms">Terms of Use</a></li>
- <h2>“Ride as much or as little, as long or as short as you feel. But ride” – Eddy Merckx</h2>
-</div>
+</body>

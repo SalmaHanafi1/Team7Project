@@ -1,11 +1,7 @@
 // Place all the styles related to the Mainpage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, verdana, sans-serif, Times New Roman, Times, serif, Arial, Helvetica, sans-serif;
 
-}
   
   // background images
 .hero-image {
@@ -78,10 +74,26 @@ li a.active {
 h1{
   font-size: 18px;
   font-weight: normal;
-  
+  text-align: center;
+  position: left;
 }
 h2{
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  
+}
+
+h3{
   font-size: 16px;
   font-weight: normal;
+  float : left;
+  
+}
+
+h4{
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
   
 }
