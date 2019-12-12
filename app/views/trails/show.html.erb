@@ -1,3 +1,10 @@
+<!--
+The View component (trails/show.html.erb) is used for all the UI logic of the "show" tab under trails. It is basically all the componenets
+that the user or the customer sees when they navigate throught this tab of an already existing trail. In this page we have the information about the trail 
+such as Name, Location, Description. Also, we have the place for the user feedback as well as a link to the "Find Trails" page. 
+
+-->
+
 <p>
     <strong>Name:</strong>
     <%= @trail.Name %>
@@ -8,9 +15,11 @@
     <%= @trail.Location %>
 </p>
 
+<h2>
 <% (0...@trail.images.count).each do |image| %>
 <%= image_tag(@trail.thumbnail(image)) %>
 <% end %>
+</h2>
 
 <p>
     <strong>Description:</strong>
@@ -36,7 +45,7 @@
   </p>
 <% end %>
 
-<h2>Add a review:</h2>
+<p>Add a review:</p>
 <%= form_for([@trail, @trail.reviews.build]) do |f| %>
   <p>
     <%= f.label :difficulty %><br>

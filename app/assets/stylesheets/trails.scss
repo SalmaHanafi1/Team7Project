@@ -1,3 +1,14 @@
-// Place all the styles related to the Trails controller here.
+// Here we place all the styles related to the Trails controller.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.bike-image {
+  background-image: url("bike.jpg");
+  background-color: #32ff40; 
+  height: 519px; // size of image
+  background-repeat: repeat-y;
+  background-size: cover;
+  position: relative;
+  	bottom: 0%;
+	right: 0%;
+	position: absolute;
+}

@@ -1,5 +1,10 @@
+<!--
+The View component (maps/index.html.erb) is used for all the UI logic related to maps. Here, we used Embedded dynamic google map using an API. 
+We learned this from Google Cloud's developers. The page has all the componenets that the user or the customer sees when they navigate throught the
+"maps" tab which is found on the "Find Trails" page. In this page we have a header, Link to Show, the logic behind adding Google maps ,link to the trail path and more.
+-->
 
-<h1>You will find maps here!</h1>
+<h1>You will find the map here!</h1>
 
 
   <body>
@@ -12,12 +17,11 @@
   
    var place = {lat: 35.217571, lng: -80.833000};
   
-
-  //var place = {lat: x, lng: y}; 
+ 
 
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 4, center: place});
-  // The marker, positioned at Uluru
+  // The marker, positioned at the location we want it to mark to
     var marker = new google.maps.Marker({position: place, map: map});
   }
     </script>

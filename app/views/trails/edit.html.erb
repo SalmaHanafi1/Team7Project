@@ -1,3 +1,9 @@
+<!--
+The View component (trails/edit.html.erb) is used for all the UI logic of editing a trail. It is basically all the componenets
+that the user or the customer sees when they navigate throught the edit tab under the Find Trails page. In this tab we have a header, a link to the
+"Find Trails" page and an area for the user to edit the entries of an already existing trail such as Name, Location, etc...
+-->
+
 <h1>Edit Trail</h1>
 
 <%= form_for :trail, url: trail_path(@trail), method: :patch do |f| %>

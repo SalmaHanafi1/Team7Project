@@ -1,8 +1,13 @@
+<!--The View component (trails/index.html.erb) is used for all the UI logic of the trails. It is basically all the componenets
+that the user or the customer sees when they navigate throught the "Find Trails" tab. In this page we have headers, 
+Link to Show, Edit, Map, Delete, link to the home page and more.
+-->
+
 <h1>Biking Trails in Charlotte, North Carolina</h1>
 <%= link_to 'Add a New Trail', new_trail_path %>
 
 <% @trail.each do |trail| %>
-<p>
+<h2>
   <%= trail.Name %>
   <%= trail.Location %>
   <%= link_to 'Show', trail_path(trail) %>&nbsp;
@@ -12,7 +17,11 @@
        trail_path(trail),
       method: :delete,
       data: { confirm: 'Are you sure?' } %>
-</p>
+
+</h2>
 <% end %>
 
+
 <%= link_to 'Home', mainpage_index_path %>
+
+
