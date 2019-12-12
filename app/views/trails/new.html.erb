@@ -1,8 +1,23 @@
+<<<<<<< HEAD
 <!--
 The View component (trails/new.html.erb) is used for all the UI logic of adding a new trail. It is basically all the componenets
 that the user or the customer sees when they navigate throught the "Add a new Trail" tab found on the top of the "Find Trails" page. In this page we have a header, 
 a link to the "Find Trails" and a place for the user to add a new trail's information such as Name, Location, image and so on..
 -->
+=======
+
+<body>
+<ul>
+  <li><a href="https://www.facebook.com/groups/532937140892453/" target="_blank">Follow our FB page</a></li>
+  
+  <li><a href="#about">About</a></li>
+  <li><a <%= link_to 'Feedback'%></a></li>
+  <li><a <%= link_to 'Back to trails list', controller: 'trails' %></a></li>
+  <h1 class="home">Safe<img src="https://cdn.vectorstock.com/i/1000x1000/24/76/bike-wheel-on-white-backgrou-vector-13472476.jpg" height="40" width="40">Lane </h1>
+</ul>
+
+
+>>>>>>> 8db186469d9472d0df8610f04be61b7057ad2007
 
 <h1>Add a new Trail</h1>
 
@@ -45,3 +60,10 @@ a link to the "Find Trails" and a place for the user to add a new trail's inform
   </p>
 <% end %>
 <%= link_to 'Back', trails_path %>
+
+<div class="footer"> 
+ <li><a href="#contact">Contact Us</a></li>
+ <li><a href="#privacy">Privacy Policy</a></li>
+ <li><a href="#terms">Terms of Use</a></li>
+ <h2>“Ride as much or as little, as long or as short as you feel. But ride” – Eddy Merckx</h2>
+</div>

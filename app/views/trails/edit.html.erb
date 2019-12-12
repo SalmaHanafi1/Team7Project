@@ -1,8 +1,23 @@
+<<<<<<< HEAD
 <!--
 The View component (trails/edit.html.erb) is used for all the UI logic of editing a trail. It is basically all the componenets
 that the user or the customer sees when they navigate throught the edit tab under the Find Trails page. In this tab we have a header, a link to the
 "Find Trails" page and an area for the user to edit the entries of an already existing trail such as Name, Location, etc...
 -->
+=======
+
+<body>
+<ul>
+  <li><a href="https://www.facebook.com/groups/532937140892453/" target="_blank">Follow our FB page</a></li>
+  
+  <li><a href="#about">About</a></li>
+  <li><a <%= link_to 'Back to trails list', trails_path %></a></li>
+  <li><a <%= link_to 'Home', mainpage_index_path %></a></li>
+  <h1 class="home">Safe<img src="https://cdn.vectorstock.com/i/1000x1000/24/76/bike-wheel-on-white-backgrou-vector-13472476.jpg" height="40" width="40">Lane </h1>
+</ul>
+
+
+>>>>>>> 8db186469d9472d0df8610f04be61b7057ad2007
 
 <h1>Edit Trail</h1>
 
@@ -44,4 +59,11 @@ that the user or the customer sees when they navigate throught the edit tab unde
     <%= f.submit %>
   </p>
 <% end %>
-<%= link_to 'Back', trails_path %>
+
+
+<div class="footer"> 
+ <li><a href="#contact">Contact Us</a></li>
+ <li><a href="#privacy">Privacy Policy</a></li>
+ <li><a href="#terms">Terms of Use</a></li>
+ <h2>“Ride as much or as little, as long or as short as you feel. But ride” – Eddy Merckx</h2>
+</div>
